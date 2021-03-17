@@ -1,7 +1,9 @@
 package me.whiteship.java8to11;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
 import java.util.function.*;
 
 public class Foo {
@@ -59,6 +61,8 @@ public class Foo {
 
         //4. 불특정 객체의 인스턴스 메소드 참조.
         String[] names = {"keesun", "whiteship", "toby"};
+        List<String> name = new ArrayList<>();
+
         //  함수형 인터페이스에 익명 클래스 사용.
         Arrays.sort(names, new Comparator<String>() {
             @Override
